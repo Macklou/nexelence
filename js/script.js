@@ -3,7 +3,7 @@
 const accrodions = document.querySelectorAll(".accrodion-heading");
 
 //strat loop to each accrodion heading
-accrodions.forEach(accrodion => {
+accrodions.forEach((accrodion) => {
   accrodion.addEventListener("click", () => {
     //add active class to accrodion heading for the arrow rotate
     accrodion.classList.toggle("active");
@@ -58,3 +58,14 @@ localStorage.theme = "dark";
 
 // Whenever the user explicitly chooses to respect the OS preference
 localStorage.removeItem("theme");
+
+function sendEmail() {
+  const name = document.getElementById("name").value;
+  const email = document.getElementById("email").value;
+  const company = document.getElementById("company_name").value;
+  const message = document.getElementById("message").value;
+
+  const mailtoLink = `mailto:louise@nexelence.com?subject=New%20message%20from%20${name}&body=Email:%20${email}%0ACompany:%20${company}%0AMessage:%20${message}`;
+
+  window.location.href = mailtoLink;
+}
