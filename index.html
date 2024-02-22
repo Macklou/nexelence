@@ -599,7 +599,7 @@ industry disruptions, economic fluctuations, and technological advancements.
             <!-- form wrapper -->
             
             <p>Fill out the form below to get in touch:</p>
-   <form action="mailto:mackinlouisemc@gmail.com" method="post" enctype="text/plain">
+  <form id="contactForm">
   <div class="input-wrapper">
     <label for="name">Your Name:</label><br>
     <input
@@ -644,8 +644,9 @@ industry disruptions, economic fluctuations, and technological advancements.
     <!-- submit btn  -->
     <input
       class="primary-btn-large"
-      type="submit"
+      type="button"
       value="Send Message"
+      onclick="sendEmail()"
     />
     <!-- WhatsApp call button  -->
     <div>
