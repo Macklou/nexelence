@@ -99,7 +99,7 @@
               <a class="nav-link" href="#our-customer-section">Customers</a>
             </li>
             <li><a class="nav-link" href="#service-section">Services</a></li>
-            <li><a class="nav-link" href="#">Locations</a></li>
+            <li><a class="nav-link" href="operate-section">Locations</a></li>
             <li><a class="nav-link" href="#contact-section">Contact</a></li>
           </ul>
         </div>
@@ -280,11 +280,7 @@
               along with esteemed fellowships in people development, we are
               esteemed experts in navigating change.
             </p>
-            <a
-              class="font-plus font-semibold underline text-base lg:text-[22px]"
-              href="mailto:louise@nexelence.com"
-              >louise@nexelence.com</a
-            >
+           
           </div>
         </div>
         <!-- flex-wrapper  -->
@@ -601,62 +597,67 @@ industry disruptions, economic fluctuations, and technological advancements.
           <div class="lg:w-1/2">
             <h2 class="heading-style-h2 lg:mb-[4.688rem]">Get in Touch</h2>
             <!-- form wrapper -->
-            <form action="">
-              <div class="input-wrapper">
-                <input
-                  class="form-input"
-                  type="text"
-                  name="name"
-                  id="name"
-                  placeholder="Enter Your Name"
-                />
-              </div>
-              <div class="input-wrapper">
-                <input
-                  class="form-input"
-                  type="text"
-                  name="email"
-                  id="email"
-                  placeholder="Enter Your Email Address"
-                />
-              </div>
-              <div class="input-wrapper">
-                <input
-                  class="form-input"
-                  type="text"
-                  name="Company"
-                  id="company_name"
-                  placeholder="Enter Your Company Name"
-                />
-              </div>
-              <div class="input-wrapper">
-                <textarea
-                  class="form-input h-40 resize-none"
-                  name="message"
-                  id="message"
-                  placeholder="Enter Your Message"
-                ></textarea>
-              </div>
-              <!-- submit button and contact btn wrapper -->
-              <div
-                class="flex gap-8 items-center flex-row lg:gap-[88px] lg:mt-14"
-              >
-                <!-- submit btn  -->
-                <input
-                  class="primary-btn-large"
-                  type="submit"
-                  value="Send Message"
-                />
-                <!-- whats app btn  -->
-                <div>
-                  <a
-                    class="font-plus font-semibold border-b border-blackTheme dark:border-gray text-base lg:text-[22px]"
-                    href="#"
-                    >Call on WhatsApp</a
-                  >
-                </div>
-              </div>
-            </form>
+            
+            <p>Fill out the form below to get in touch:</p>
+  <form id="contactForm">
+  <div class="input-wrapper">
+    <label for="name">Your Name:</label><br>
+    <input
+      class="form-input"
+      type="text"
+      name="name"
+      id="name"
+      placeholder="Enter Your Name"
+    />
+  </div>
+  <div class="input-wrapper">
+    <label for="email">Your Email:</label><br>
+    <input
+      class="form-input"
+      type="email"
+      name="email"
+      id="email"
+      placeholder="Enter Your Email Address"
+    />
+  </div>
+  <div class="input-wrapper">
+    <label for="company_name">Your Company Name:</label><br>
+    <input
+      class="form-input"
+      type="text"
+      name="Company"
+      id="company_name"
+      placeholder="Enter Your Company Name"
+    />
+  </div>
+  <div class="input-wrapper">
+    <label for="message">Your Message:</label><br>
+    <textarea
+      class="form-input h-40 resize-none"
+      name="message"
+      id="message"
+      placeholder="Enter Your Message"
+    ></textarea>
+  </div>
+  <!-- submit button and contact btn wrapper -->
+  <div class="flex gap-8 items-center flex-row lg:gap-[88px] lg:mt-14">
+    <!-- submit btn  -->
+    <input
+      class="primary-btn-large"
+      type="button"
+      value="Send Message"
+      onclick="sendEmail()"
+    />
+    <!-- WhatsApp call button  -->
+    <div>
+      <a
+        class="font-plus font-semibold border-b border-blackTheme dark:border-gray text-base lg:text-[22px]"
+        href="#"
+        >Call on WhatsApp</a
+      >
+    </div>
+  </div>
+</form>
           </div>
           <!-- flex item  -->
           <div
